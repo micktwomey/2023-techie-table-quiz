@@ -32,6 +32,16 @@ rounds:
           - https://www.kaspersky.com/resource-center/threats/a-brief-history-of-computer-viruses-and-what-the-future-holds
           - https://en.wikipedia.org/wiki/Computer_virus
       - question: |
+          Who first discussed the idea of computer viruses? Clue: Their work went on to be shared in a series of lectures under the catch title of "Theory and Organization of Complicated Automata".
+        answer: John von Neumann
+        commentary: |
+          Year was 1949
+
+          He effectively outlined a thought experiment that speculated that it would be possible for a "mechanical" organism—such as a piece of computer code—to damage machines, copy itself and infect new hosts, just like a biological virus.
+        sources:
+          - https://www.kaspersky.com/resource-center/threats/a-brief-history-of-computer-viruses-and-what-the-future-holds
+          - https://en.wikipedia.org/wiki/Computer_virus
+      - question: |
           Sam Bankman-Fried, the recently convicted ex-CEO of the crypto exchange FTX was known to play what game while on calls with investors?
 
           Hint: the Financial Times classed his win ratio as “average-to-bad”
@@ -47,7 +57,11 @@ rounds:
         answer: Alien
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
-
+      - question: |
+          Which fizzy soft drink can be used to visually represent a character in a 2D computer game?
+        answer: sprite
+        sources:
+          - https://en.wikipedia.org/wiki/Sprite_(computer_graphics)
 
   - title: Round 2
     questions:
@@ -62,6 +76,18 @@ rounds:
         sources:
           - https://conference.blender.org/2023/presentations/1928/
           - https://youtu.be/8yHuJLeAAsA?si=zYp42zBJEKg9pxMF
+      - question: |
+          In what decade was the first working transistor invented?
+
+          a. 1930s
+          b. 1940s
+          c. 1950s
+          d. 1960s
+        answer: b. 1940s
+        sources:
+          - https://en.wikipedia.org/wiki/Transistor
+        commentary: |
+          The invention of the transistor in 1947 by John Bardeen, Walter Brattain, and William Shockley and revolutionized electronics
       - question: |
           Name the film, game or TV series in which the following spaceship plays a role:
 
@@ -86,24 +112,36 @@ rounds:
           - https://en.wikipedia.org/wiki/Amiga_Original_Chip_Set
           - https://parade.com/food/types-of-chips
           - https://www.tastingtable.com/1344905/types-french-fries-ranked/
+        commentary: |
+          Agnus is the central chip in the design of the Amiga. It controlled all access to chip RAM from both the central 68000 processor and the other custom chips.
+
+          The original Agnus can address 512 KB of chip RAM. Later revisions, dubbed 'Fat Agnus', added 512 KB pseudo-fast RAM, which for ECS was changed to 1 MB (sometimes called 'Fatter Agnus') and subsequently to 2 MB chip RAM.
+
+          The other chips on the amiga were Denise (for video processing) and Paula (for audio processing)
+
+          Funyon: An onion-flavored corn snacks came about in 1969 and break from chip form with their ring shapes
+
+          Pouting: Qubec/Canadian dish. A bed of hot fries smothered in cheese curds and gravy
 
   - title: Round 3
     questions:
       - question: |
-          [ ] I'm not a robot
+          ![inline](recaptcha-checkbox.png)
 
           How many squares with buses are there?
         answer: 16 or None
         question_image: recaptcha-3.png
+        images:
+          - recaptcha-checkbox.png
         sources:
           - https://mastodon.social/@jemjabella/111204496899609794
       - question: |
           In what year did we first run this table quiz?
 
-          - 2005
-          - 2010
-          - 2016
-        answer: "2010"
+          a. 2005
+          b. 2010
+          c. 2016
+        answer: "c. 2010"
       - question: |
           Name the film, game or TV series in which the following spaceship plays a role:
 
@@ -112,6 +150,16 @@ rounds:
         answer: "Star Trek: Lower Decks or Lower Decks"
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+      - question: |
+          We love QR codes and you've probably scanned a fair few of them. But was does QR stand for?
+
+          Bonus: For what purpose were QR codes invented?
+        answer: |
+          Quick Response
+
+          Bonus: For labelling automobile parts
+        sources:
+          - https://en.wikipedia.org/wiki/QR_code
 
   - title: Round 4
     questions:
@@ -138,6 +186,15 @@ rounds:
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
       - question: |
+          The term "bug" was used in an account by computer pioneer Grace Hopper, who publicized the cause of a malfunction in an early electromechanical computer.
+
+          What bug was it?
+        answer: Moth
+        sources:
+          - https://education.nationalgeographic.org/resource/worlds-first-computer-bug/
+          - https://en.wikipedia.org/wiki/Software_bug
+
+      - question: |
           Dave Tennant has reprised his role as the 14th Doctor in the recent Doctor Who specials.
 
           Who will play the 15th Doctor in Doctor Who, starting this Christmas?
@@ -147,3 +204,13 @@ rounds:
           - https://www.bbc.com/mediacentre/2023/doctor-who-new-trailer-60th-anniversary-specials
           - https://en.wikipedia.org/wiki/The_Doctor_(Doctor_Who)
         commentary: Pronounced "SHOO-tee GAT-wah"
+      - question: |
+          Amazing languages like Elixir and Erlang run on a virtual machine called the BEAM.
+
+          It is not as creatively named as the JVM but nonetheless what does BEAM stand for?
+        answer: |
+          It was short for Bogdan's Erlang Abstract Machine
+
+          (Björn's Erlang Abstract Machine is also acceptable)
+        sources:
+          - https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)

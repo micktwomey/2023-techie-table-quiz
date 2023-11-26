@@ -1,3 +1,3 @@
 {% macro theme(round) -%}
-theme: Scherzkeks, {{round.number}}
+theme: Inter, {{round.number}}
 {%- endmacro %}

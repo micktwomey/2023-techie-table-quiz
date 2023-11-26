@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "techie-table-quiz"
+version = "0.1.0"
+description = "2023 Techie Table Quiz"
+authors = ["Michael Twomey <mick@twomeylee.name>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jinja2 = "^3.1.2"
+mypy = "^1.7.1"
+ruff = "^0.1.6"
+typer = "^0.9.0"
+pydantic = "^2.5.2"
+pydantic-yaml = "^1.2.0"
+rich = "^13.7.0"
+structlog = "^23.2.0"
+watchfiles = "^0.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.7.1"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+techie-table-quiz = "techie_table_quiz.main:app"

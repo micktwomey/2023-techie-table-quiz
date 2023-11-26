@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pydantic_yaml import parse_yaml_raw_as
 import structlog
 
@@ -14,11 +14,14 @@ class Question(BaseModel):
     answer: str
     answer_image: str | None = None
     number: int = 0
+    sources: list[str] = Field(default_factory=list)
+    images: list[str] = Field(default_factory=list)
 
 
 class Round(BaseModel):
     title: str
     questions: list[Question]
+    number: int = 0
 
     def update(self):
         for i, question in enumerate(self.questions):
@@ -31,6 +34,7 @@ class Round(BaseModel):
                 if answer_mode
                 else [question.question_image]
             )
+            images.extend(question.images)
             for filename in images:
                 if filename is None:
                     continue
@@ -50,8 +54,9 @@ class Quiz(BaseModel):
     rounds: list[Round]
 
     def update(self):
-        for round in self.rounds:
+        for i, round in enumerate(self.rounds):
             round.update()
+            round.number = i + 1
 
 
 def parse_yaml(yaml: str) -> Quiz:

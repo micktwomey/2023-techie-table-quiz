@@ -1,0 +1,149 @@
+rounds:
+  - title: Round 1
+    questions:
+      - question: |
+          [ ] I'm not a robot
+
+          How many squares with bridges are there?
+        answer: "3"
+        question_image: recaptcha-1.png
+        commentary: |
+          With the increased use of AI tools we need to be on our guard to ensure no one is cheating
+      - question: |
+          What was the highest grossing film of 2024?
+
+          (As of 2023-11-26)
+        answer: Barbie, $1.4 billion
+        sources:
+          - https://en.wikipedia.org/wiki/2023_in_film
+      - question: |
+          Name the first Irish satellite that will be launched at the end of this month of November.
+
+          Bonus: What does the acronym stand for?
+        answer: |
+          EIRSAT-1
+
+          > Educational Irish Research Satellite
+        sources:
+          - https://www.eirsat1.ie/
+      - question: What is widely regarded as the world's first computer virus and displayed a simple message ending with 'CATCH ME IF YOU CAN!'?
+        answer: Creeper
+        sources:
+          - https://www.kaspersky.com/resource-center/threats/a-brief-history-of-computer-viruses-and-what-the-future-holds
+          - https://en.wikipedia.org/wiki/Computer_virus
+      - question: |
+          Sam Bankman-Fried, the recently convicted ex-CEO of the crypto exchange FTX was known to play what game while on calls with investors?
+
+          Hint: the Financial Times classed his win ratio as “average-to-bad”
+        answer: League of Legends
+        sources:
+          - https://www.ft.com/content/23ab2258-ce03-4fbb-a9b2-7d9ec6e3d7f0
+          - https://en.wikipedia.org/wiki/Sam_Bankman-Fried
+      - question: |
+          Name the film, game or TV series in which the following spaceship plays a role:
+
+          Nostromo
+
+        answer: Alien
+        sources:
+          - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+
+
+  - title: Round 2
+    questions:
+      - question: |
+          The long running TV series Doctor Who celebrated its what anniversary this year?
+        answer: 60th
+        sources:
+          - https://www.bbc.com/historyofthebbc/anniversaries/november/doctor-who-first-episode/
+      - question: |
+          Spider-Man: Across the Spider-Verse used what open source 3D modelling tool for some of its animation?
+        answer: Blender
+        sources:
+          - https://conference.blender.org/2023/presentations/1928/
+          - https://youtu.be/8yHuJLeAAsA?si=zYp42zBJEKg9pxMF
+      - question: |
+          Name the film, game or TV series in which the following spaceship plays a role:
+
+          Normandy SR-1
+
+        answer: Mass Effect
+        sources:
+          - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+      - question: |
+          Chips, chips or chips! Which of these is a potato chip (ie. crisps, eaten unheated), a proper chip (ie. chipper chips, eaten hot) or a computer chip?
+
+          - Fatter Agnus
+          - Funyon
+          - Poutine
+
+          1 point per correct answer
+        answer: |
+          - Fatter Agnus (Computer chip)
+          - Funyon (Potato chip)
+          - Poutine (Proper chip)
+        sources:
+          - https://en.wikipedia.org/wiki/Amiga_Original_Chip_Set
+          - https://parade.com/food/types-of-chips
+          - https://www.tastingtable.com/1344905/types-french-fries-ranked/
+
+  - title: Round 3
+    questions:
+      - question: |
+          [ ] I'm not a robot
+
+          How many squares with buses are there?
+        answer: 16 or None
+        question_image: recaptcha-3.png
+        sources:
+          - https://mastodon.social/@jemjabella/111204496899609794
+      - question: |
+          In what year did we first run this table quiz?
+
+          - 2005
+          - 2010
+          - 2016
+        answer: "2010"
+      - question: |
+          Name the film, game or TV series in which the following spaceship plays a role:
+
+          USS Cerritos
+
+        answer: "Star Trek: Lower Decks or Lower Decks"
+        sources:
+          - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+
+  - title: Round 4
+    questions:
+      - question: |
+          ![inline](recaptcha-checkbox.png)
+
+          How many squares with traffic lights are there?
+
+          - None
+          - 2
+        answer: 2 (according to recaptcha)
+        question_image: recaptcha-4.png
+        answer_image: recaptcha-4-answer.png
+        images:
+          - recaptcha-checkbox.png
+        sources:
+          - https://twitter.com/ThatsMauvelous/status/1576675184165068800
+      - question: |
+          Name the film, game or TV series in which the following spaceship plays a role:
+
+          Heart of Gold
+
+        answer: "The Hitchhiker's Guide to the Galaxy"
+        sources:
+          - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+      - question: |
+          Dave Tennant has reprised his role as the 14th Doctor in the recent Doctor Who specials.
+
+          Who will play the 15th Doctor in Doctor Who, starting this Christmas?
+        answer:
+          Ncuti Gatwa
+        sources:
+          - https://www.bbc.com/mediacentre/2023/doctor-who-new-trailer-60th-anniversary-specials
+          - https://en.wikipedia.org/wiki/The_Doctor_(Doctor_Who)
+        commentary: Pronounced "SHOO-tee GAT-wah"

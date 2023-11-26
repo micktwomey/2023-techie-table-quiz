@@ -134,5 +134,17 @@ def watch(
         watch_build()
 
 
+@app.command()
+def statistics(questions_and_answers: Path = Path("questions_and_answers.yaml")):
+    """Generate some statistics"""
+    quiz = parse_yaml(questions_and_answers.open("r").read())
+    LOG.info("rounds", count=len(quiz.rounds))
+    for round in quiz.rounds:
+        try:
+            LOG.info("questions", count=len(round.questions), round=round.number)
+        except Exception:
+            LOG.error("Skipping change")
+
+
 if __name__ == "__main__":
     app()

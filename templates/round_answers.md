@@ -1,6 +1,6 @@
 {%- from 'macros/question.md' import ask_question, answer_question -%}
 {%- from 'macros/theme.md' import theme -%}
-{{ theme() }}
+{{ theme(round) }}
 
 
 # {{round.title}}

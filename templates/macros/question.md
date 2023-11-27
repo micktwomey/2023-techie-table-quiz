@@ -11,7 +11,7 @@
 {%- endmacro %}
 
 {% macro answer_question(question) -%}
-# Question {{question.number}} Answer
+### Question {{question.number}} Answer
 
 {{question.answer}}
 

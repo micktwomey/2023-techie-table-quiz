@@ -71,6 +71,22 @@ rounds:
         answer: Black Mesa (or Black Mesa Research Facility)
         sources:
           - https://en.wikipedia.org/wiki/Half-Life_(video_game)
+      - question: |
+          The Jupiter Icy Moons Explorer (Juice) is an interplanetary spacecraft that was launched on 14 April 2023 by the European Space Agency to explore Jupiter and its moons
+
+          When is it expected to reach Jupiter?
+
+          a. 2031
+          b. 2038
+          c. 2040
+        answer: |
+          # a. 2031
+
+          It is expected to reach Jupiter in July 2031 after four gravity assists and eight years of travel.
+        sources:
+          - https://en.wikipedia.org/wiki/Jupiter_Icy_Moons_Explorer
+        question_image: juice.png
+        answer_image: juice-logo.png
 
   - title: Round 2
     questions:
@@ -191,6 +207,22 @@ rounds:
           101955 Bennu, a carbonaceous near-Earth asteroid.
         question_image: osiris-rex-sample-return.jpg
         answer_image: bennu.gif
+      - question: |
+          A bitcoiner recently made history for the largest transaction fee in Bitcoin history.
+
+          How much was it?
+
+          a. ~$500,000
+          b. ~$1,00,000
+          c. ~$3,000,000
+        answer: |
+          # c. ~$3,000,000 (83.64 BTC)
+
+          (Transaction fees are usually < $100)
+
+        answer_image: bitcoin-fee.png
+        sources:
+          - https://web3isgoinggreat.com/?id=bitcoiner-spends-3-million-on-transaction-fee
 
   - title: Round 3
     questions:
@@ -293,6 +325,22 @@ rounds:
           - https://en.wikipedia.org/wiki/Xerox_Alto
           - https://en.wikipedia.org/wiki/Ethernet
           - https://www.righto.com/2018/01/xerox-altos-3-mbs-ethernet-building.html
+      - question: |
+          Which movie is this quote from?
+
+          > Shall we play a game?
+
+          Bonus: What is the name of the AI who said it?
+
+        answer: |
+          # WarGames
+
+          ## Bonus: JOSHUA
+
+          > the only winning move is not to play
+        sources:
+          - https://en.wikipedia.org/wiki/WarGames
+        answer_image: wargames.jpg
 
   - title: Round 4
     questions:
@@ -338,6 +386,16 @@ rounds:
           - https://en.wikipedia.org/wiki/The_Doctor_(Doctor_Who)
         commentary: Pronounced "SHOO-tee GAT-wah"
       - question: |
+          On the 23rd of August 2023 India became the 4th country to successfully do what in space?
+        answer: |
+          # Land on the Moon
+
+          The mission consists of a lunar lander named Vikram and a lunar rover named Pragyan
+        sources:
+          - https://en.wikipedia.org/wiki/Chandrayaan-3
+        answer_image: vikram.webp
+        question_image: chandrayaan-takeoff.webp
+      - question: |
           Amazing languages like Elixir and Erlang run on a virtual machine called the BEAM.
 
           It is not as creatively named as the JVM but nonetheless what does BEAM stand for?
@@ -358,6 +416,19 @@ rounds:
 
         sources:
           - https://web3isgoinggreat.com/?id=apefest-photokeratitis
+      - question: |
+          By views in the first 91 days, what is the most popular show on Netflix (in English)?
+
+          a. Stranger Things 4
+          b. Bridgerton: Season 1
+          c. Wednesday: Season 1
+        answer: |
+          # c. Wednesday: Season 1
+
+          (Only beaten by Squid Game (non-English))
+        sources:
+          - https://www.netflix.com/tudum/top10/most-popular/tv?week=2023-11-26
+        answer_image: netflix-top-shows.png
       - question: |
           Apple's recent October 30th keynote was the usual slickly produced sales event
 

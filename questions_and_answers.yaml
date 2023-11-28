@@ -179,6 +179,18 @@ rounds:
           Released in 1998
         question_image: metal-gear-box.jpeg
         answer_image: metal-gear-codec.png
+      - question: |
+          On September 24th the sample return module from NASA's OSIRIS-REx mission successfully touched back down on Earth.
+
+          Inside were samples successfully retrieved from a near Earth asteroid
+
+          What was the name of the asteroid it took samples from?
+        answer: |
+          # Bennu
+
+          101955 Bennu, a carbonaceous near-Earth asteroid.
+        question_image: osiris-rex-sample-return.jpg
+        answer_image: bennu.gif
 
   - title: Round 3
     questions:
@@ -267,6 +279,20 @@ rounds:
           Like all good operations folks they patched Voyager 2 first, then Voyagger 1
         sources:
           - https://arstechnica.com/space/2023/10/nasa-wants-the-voyagers-to-age-gracefully-so-its-time-for-a-software-patch/
+      - question: |
+          50 years ago Xerox released the Xerox Alto, the computer many regarded as having defined Graphical User Interfaces as we know them
+
+          The Alto also marked the introduction of what networking technology?
+        answer: |
+          # Ethernet
+
+          Created to allow Xerox Alto computers communicate with each other
+        question_image: xerox-alto.jpeg
+        answer_image: xerox-alto-ethernet.jpg
+        sources:
+          - https://en.wikipedia.org/wiki/Xerox_Alto
+          - https://en.wikipedia.org/wiki/Ethernet
+          - https://www.righto.com/2018/01/xerox-altos-3-mbs-ethernet-building.html
 
   - title: Round 4
     questions:
@@ -343,3 +369,10 @@ rounds:
         answer_image: apple-shot-on-iphone.jpg
         sources:
           - https://www.apple.com/newsroom/2023/10/behind-the-scenes-at-scary-fast-apples-keynote-event-shot-on-iphone/
+      - question: |
+          During a recent spacewalk outside the International Space Station what got dropped?
+        answer: |
+          # A toolbag
+        answer_image: iss-lost-toolbag.jpeg
+        sources:
+          - https://www.theguardian.com/science/2023/nov/11/astronaut-toolbag-earth-spacewalk

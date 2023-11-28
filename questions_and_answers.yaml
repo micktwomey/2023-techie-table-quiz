@@ -161,12 +161,24 @@ rounds:
         question_image: Badgers_Badgers.gif
         answer_image: mushroom_mushroom.gif
         commentary: |
-          The badger song was released 20 years ago this year.
+          The badger song was released 20 years ago.
 
           It was a flash animation which looped forever.
         sources:
+          - https://www.youtube.com/watch?v=cMxRFCKIqr0
           - https://genius.com/Mr-weebl-badger-badger-badger-lyrics
           - https://en.wikipedia.org/wiki/Badgers_%28animation%29
+      - question: |
+          Metal Gear Solid is an action adventure stealth game created by Hideo Kojima
+
+          It was released on the Playstation how many years ago?
+
+        answer: |
+          # 25 years ago
+
+          Released in 1998
+        question_image: metal-gear-box.jpeg
+        answer_image: metal-gear-codec.png
 
   - title: Round 3
     questions:
@@ -242,6 +254,19 @@ rounds:
         answer_image: cruise-traffic-cone.jpg
         sources:
           - https://www.npr.org/2023/08/26/1195695051/driverless-cars-san-francisco-waymo-cruise
+      - question: |
+          Software updates are important
+
+          NASA recently patched which space probes in October?
+        answer: |
+          # Voyager
+
+          After 46 years Voyager is still getting updates!
+        answer_image: vger-startreki.jpg
+        commentary: |
+          Like all good operations folks they patched Voyager 2 first, then Voyagger 1
+        sources:
+          - https://arstechnica.com/space/2023/10/nasa-wants-the-voyagers-to-age-gracefully-so-its-time-for-a-software-patch/
 
   - title: Round 4
     questions:
@@ -307,3 +332,14 @@ rounds:
 
         sources:
           - https://web3isgoinggreat.com/?id=apefest-photokeratitis
+      - question: |
+          Apple's recent October 30th keynote was the usual slickly produced sales event
+
+          Apart from all the product announcements there was something different about how this event was made.
+
+          What was different?
+        answer: |
+          # Filmed entirely on a phone
+        answer_image: apple-shot-on-iphone.jpg
+        sources:
+          - https://www.apple.com/newsroom/2023/10/behind-the-scenes-at-scary-fast-apples-keynote-event-shot-on-iphone/

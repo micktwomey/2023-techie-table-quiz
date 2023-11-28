@@ -1,4 +1,6 @@
 from pathlib import Path
+import subprocess
+import tempfile
 
 import jinja2
 import rich.traceback
@@ -10,6 +12,59 @@ from .quiz import parse_yaml, Quiz, Round
 
 app = typer.Typer()
 LOG = structlog.get_logger()
+
+
+def convert_to_pdf(
+    env: jinja2.Environment,
+    markdown_path: Path,
+    pdf_path: Path,
+    print_all_steps: bool = False,
+    include_presenter_notes: bool = False,
+    template_filename="deckset_osascript.applescript",
+):
+    template = env.get_template(template_filename)
+    with tempfile.NamedTemporaryFile(
+        suffix=".applescript", delete_on_close=False
+    ) as fp:
+        output = template.render(
+            markdown_abspath=str(markdown_path.absolute()),
+            pdf_abspath=str(pdf_path.absolute()),
+            print_all_steps="true" if print_all_steps else "false",
+            include_presenter_notes="true" if include_presenter_notes else "false",
+        )
+        fp.write(output.encode("utf-8"))
+        fp.close()
+
+        subprocess.check_call(["osascript", fp.name])
+
+
+@app.command()
+def generate_pdf(
+    input: Path,
+    output: Path,
+    print_all_steps: bool = False,
+    include_presenter_notes: bool = False,
+    templates_path: Path = Path("templates/"),
+):
+    """Convert markdown to PDF slides using Deckset"""
+    env = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(templates_path),
+        autoescape=jinja2.select_autoescape(),
+    )
+    LOG.info(
+        "convert_to_pdf",
+        markdown_path=input,
+        pdf_path=output,
+        print_all_steps=print_all_steps,
+        include_presenter_notes=include_presenter_notes,
+    )
+    convert_to_pdf(
+        env=env,
+        markdown_path=input,
+        pdf_path=output,
+        print_all_steps=print_all_steps,
+        include_presenter_notes=include_presenter_notes,
+    )
 
 
 def generate_round(
@@ -47,6 +102,34 @@ def generate_round(
     )
 
 
+def generate_all_rounds(
+    env: jinja2.Environment,
+    quiz: Quiz,
+    template_filename: str,
+    output_path: Path,
+    images_path: Path,
+    output_prefix: str,
+    answer_mode: bool,
+):
+    template = env.get_template(template_filename)
+    output = template.render(round=round, quiz=quiz)
+    p = output_path / output_prefix / "quiz" / "quiz.md"
+    LOG.info(
+        "generate_all_rounds",
+        path=p,
+        answer_mode=answer_mode,
+        output_prefix=output_prefix,
+        template=template,
+    )
+    p.parent.mkdir(exist_ok=True, parents=True)
+    p.open("w").write(output)
+    quiz.copy_images(
+        source=images_path,
+        destination=output_path / output_prefix / "quiz",
+        answer_mode=answer_mode,
+    )
+
+
 def generate_quiz(
     templates_path: Path,
     questions_and_answers: Path,
@@ -65,6 +148,26 @@ def generate_quiz(
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templates_path),
         autoescape=jinja2.select_autoescape(),
+    )
+
+    generate_all_rounds(
+        env=env,
+        quiz=quiz,
+        template_filename="all_rounds_questions.md",
+        output_path=output_path,
+        images_path=images_path,
+        output_prefix="questions",
+        answer_mode=False,
+    )
+
+    generate_all_rounds(
+        env=env,
+        quiz=quiz,
+        template_filename="all_rounds_answers.md",
+        output_path=output_path,
+        images_path=images_path,
+        output_prefix="answers",
+        answer_mode=True,
     )
 
     for round in quiz.rounds:

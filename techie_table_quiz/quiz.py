@@ -58,6 +58,12 @@ class Quiz(BaseModel):
             round.update()
             round.number = i + 1
 
+    def copy_images(self, source: Path, destination: Path, answer_mode: bool):
+        for round in self.rounds:
+            round.copy_images(
+                source=source, destination=destination, answer_mode=answer_mode
+            )
+
 
 def parse_yaml(yaml: str) -> Quiz:
     quiz = parse_yaml_raw_as(Quiz, yaml)

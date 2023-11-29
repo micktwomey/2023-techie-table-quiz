@@ -7,6 +7,8 @@ rounds:
           How many squares with bridges are there?
         answer: "3"
         question_image: recaptcha-1.png
+        images:
+          - recaptcha-checkbox.png
         commentary: |
           With the increased use of AI tools we need to be on our guard to ensure no one is cheating
       - question: |
@@ -130,9 +132,10 @@ rounds:
       - question: |
           Name the film, game or TV series in which the following spaceship plays a role:
 
-          Normandy SR-1
+          # Normandy SR-1
 
-        answer: Mass Effect
+        answer: |
+          # Mass Effect
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
         question_image: normandy-sr-1.png

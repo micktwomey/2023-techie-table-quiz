@@ -2,7 +2,7 @@ rounds:
   - title: Round 1
     questions:
       - question: |
-          [ ] I'm not a robot
+          ![inline](recaptcha-checkbox.png)
 
           How many squares with bridges are there?
         answer: "3"
@@ -17,7 +17,7 @@ rounds:
         sources:
           - https://en.wikipedia.org/wiki/2023_in_film
       - question: |
-          Name the first Irish satellite that will be launched at the end of this month of November.
+          What is the name of the first Irish satellite, due to be launch 1st December, 2023?
 
           Bonus: What does the acronym stand for?
         answer: |
@@ -26,6 +26,8 @@ rounds:
           > Educational Irish Research Satellite
         sources:
           - https://www.eirsat1.ie/
+        question_image: eirsat.webp
+        answer_image: eirsat-launch.webp
       - question: What is widely regarded as the world's first computer virus and displayed a simple message ending with 'CATCH ME IF YOU CAN!'?
         answer: Creeper
         sources:
@@ -46,6 +48,7 @@ rounds:
 
           Hint: the Financial Times classed his win ratio as “average-to-bad”
         answer: League of Legends
+        answer_image: league-of-legends.jpg
         sources:
           - https://www.ft.com/content/23ab2258-ce03-4fbb-a9b2-7d9ec6e3d7f0
           - https://en.wikipedia.org/wiki/Sam_Bankman-Fried
@@ -53,10 +56,10 @@ rounds:
           Name the film, game or TV series in which the following spaceship plays a role:
 
           Nostromo
-
         answer: Alien
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+        question_image: nostromo.jpg
       - question: |
           Which fizzy soft drink can be used to visually represent a character in a 2D computer game?
         answer: sprite
@@ -68,9 +71,14 @@ rounds:
           In it you play the scientist Gordon Freeman who is attempting to escape a resarch facility after an experiment goes terribly wrong.
 
           What was the name of the research facility the game is set in?
-        answer: Black Mesa (or Black Mesa Research Facility)
+        answer: |
+          # Black Mesa
+
+          (or Black Mesa Research Facility)
         sources:
           - https://en.wikipedia.org/wiki/Half-Life_(video_game)
+        answer_image: half-life-scientist.png
+        question_image: half-life.jpg
       - question: |
           The Jupiter Icy Moons Explorer (Juice) is an interplanetary spacecraft that was launched on 14 April 2023 by the European Space Agency to explore Jupiter and its moons
 
@@ -92,15 +100,21 @@ rounds:
     questions:
       - question: |
           The long running TV series Doctor Who celebrated its what anniversary this year?
-        answer: 60th
+        answer: |
+          # 60th
         sources:
           - https://www.bbc.com/historyofthebbc/anniversaries/november/doctor-who-first-episode/
+        question_image: doctor-who.jpeg
+        answer_image: tardis.jpeg
       - question: |
           Spider-Man: Across the Spider-Verse used what open source 3D modelling tool for some of its animation?
-        answer: Blender
+        answer: |
+          # Blender
         sources:
           - https://conference.blender.org/2023/presentations/1928/
           - https://youtu.be/8yHuJLeAAsA?si=zYp42zBJEKg9pxMF
+        question_image: spider-verse-poster.jpg
+        answer_image: spider-verse-blender.png
       - question: |
           In what decade was the first working transistor invented?
 
@@ -121,6 +135,8 @@ rounds:
         answer: Mass Effect
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+        question_image: normandy-sr-1.png
+        answer_image: mass-effect.jpg
       - question: |
           Chips, chips or chips! Which of these is a potato chip (ie. crisps, eaten unheated), a proper chip (ie. chipper chips, eaten hot) or a computer chip?
 
@@ -150,20 +166,19 @@ rounds:
       - question: |
           Know your meme: fill in the blank:
 
-          > Sci-Fi Author: In my book I invented the _____ as a cautionary tale
+          ### Sci-Fi Author: In my book I invented the ___ ___ as a cautionary tale
 
-          > Tech Company: At long last, we have created the _____ from classic sci-fi novel Don't Create The _____
+          ### Tech Company: At long last, we have created the ___ ___ from classic sci-fi novel Don't Create The ___ ___
 
           (Same answer for all blanks)
         answer:  |
           # Torment Nexus
 
-          > Sci-Fi Author: In my book I invented the Torment Nexus as a cautionary tale
-
-          > Tech Company: At long last, we have created the Torment Nexus from classic sci-fi novel Don't Create The Torment Nexus
+          ### Sci-Fi Author: In my book I invented the Torment Nexus as a cautionary tale
+          ### Tech Company: At long last, we have created the Torment Nexus from classic sci-fi novel Don't Create The Torment Nexus
         sources:
           - https://twitter.com/AlexBlechman/status/1457842724128833538?lang=en
-          - https://www.antipope.org/charlie/blog-static/2023/11/dont-create-the-torment-nexus.html
+          # - https://www.antipope.org/charlie/blog-static/2023/11/dont-create-the-torment-nexus.html
       - question: |
           Complete the following:
 
@@ -189,8 +204,12 @@ rounds:
 
           It was released on the Playstation how many years ago?
 
+          a. 20 years ago
+          b. 25 years ago
+          c. 30 years ago
+
         answer: |
-          # 25 years ago
+          # b. 25 years ago
 
           Released in 1998
         question_image: metal-gear-box.jpeg
@@ -213,7 +232,7 @@ rounds:
           How much was it?
 
           a. ~$500,000
-          b. ~$1,00,000
+          b. ~$1,000,000
           c. ~$3,000,000
         answer: |
           # c. ~$3,000,000 (83.64 BTC)
@@ -246,11 +265,15 @@ rounds:
       - question: |
           Name the film, game or TV series in which the following spaceship plays a role:
 
-          USS Cerritos
+          # USS Cerritos
 
-        answer: "Star Trek: Lower Decks or Lower Decks"
+        answer: |
+          # Star Trek: Lower Decks
+
+          (or Lower Decks)
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+        answer_image: lower-decks.png
       - question: |
           We love QR codes and you've probably scanned a fair few of them. But was does QR stand for?
 
@@ -261,6 +284,8 @@ rounds:
           Bonus: For labelling automobile parts
         sources:
           - https://en.wikipedia.org/wiki/QR_code
+        question_image: qr.png
+        answer_image: qr.png
       - question: |
           Red Hat is famous for its Linux distribution and hat logo
 
@@ -285,28 +310,33 @@ rounds:
           # c.   8
         source:
           - https://en.wikipedia.org/wiki/List_of_Nintendo_controllers
+        question_image: NES-ROB.jpg
+        answer_image: NES-Console-Set.png
       - question: |
           Autonomous taxi company Cruise recently lost their self-driving permits in California.
 
-          Before they lost their license what common object did protestors use to immobilize Cuise cars?
+          Before they lost their license what common object did protestors use to immobilize Cruise cars?
         answer: |
           # Traffic Cone
 
           > All it takes to render the technology-packed self-driving car inoperable is a traffic cone. If all goes according to plan, it will stay there, frozen, until someone comes and removes it.
-
-
         answer_image: cruise-traffic-cone.jpg
         sources:
           - https://www.npr.org/2023/08/26/1195695051/driverless-cars-san-francisco-waymo-cruise
       - question: |
           Software updates are important
 
-          NASA recently patched which space probes in October?
+          NASA recently patched a famous space probe in October
+
+          What is it's name?
         answer: |
           # Voyager
 
+          Voyager 2 to be precise, Voyager 1 will be patched later
+
           After 46 years Voyager is still getting updates!
         answer_image: vger-startreki.jpg
+        question_image: pale-blue-dot.jpg
         commentary: |
           Like all good operations folks they patched Voyager 2 first, then Voyagger 1
         sources:
@@ -349,9 +379,12 @@ rounds:
 
           How many squares with traffic lights are there?
 
-          - None
-          - 2
-        answer: 2 (according to recaptcha)
+          a. None
+          b. 2
+        answer: |
+          # b. 2
+
+          according to recaptcha
         question_image: recaptcha-4.png
         answer_image: recaptcha-4-answer.png
         images:
@@ -361,20 +394,22 @@ rounds:
       - question: |
           Name the film, game or TV series in which the following spaceship plays a role:
 
-          Heart of Gold
+          # Heart of Gold
 
         answer: "The Hitchhiker's Guide to the Galaxy"
         sources:
           - https://en.wikipedia.org/wiki/List_of_fictional_spacecraft
+        question_image: heart-of-gold.jpg
+        answer_image: h2g-poster.jpg
       - question: |
           The term "bug" was used in an account by computer pioneer Grace Hopper, who publicized the cause of a malfunction in an early electromechanical computer.
 
-          What bug was it?
+          What bug (insect) was it?
         answer: Moth
         sources:
           - https://education.nationalgeographic.org/resource/worlds-first-computer-bug/
           - https://en.wikipedia.org/wiki/Software_bug
-
+        answer_image: computer-bug-moth.jpg
       - question: |
           Dave Tennant has reprised his role as the 14th Doctor in the recent Doctor Who specials.
 
@@ -385,6 +420,8 @@ rounds:
           - https://www.bbc.com/mediacentre/2023/doctor-who-new-trailer-60th-anniversary-specials
           - https://en.wikipedia.org/wiki/The_Doctor_(Doctor_Who)
         commentary: Pronounced "SHOO-tee GAT-wah"
+        question_image:  doctor-who.jpeg
+        answer_image: fifteenth-doctor.jpg
       - question: |
           On the 23rd of August 2023 India became the 4th country to successfully do what in space?
         answer: |
@@ -406,9 +443,9 @@ rounds:
         sources:
           - https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)
       - question: |
-          Collectors of Bored Ape NFT recently attended an "ApeFest" party in Hong Kong
+          Collectors of Bored Ape NFT recently attended an "ApeFest" event in Hong Kong, which culminated in a concert.
 
-          After the party some attendees complained about excrutiating pain in which part of the body?
+          After the concert some attendees complained about excrutiating pain in which part of the body?
         question_image: bayc-5262_1000.png
         answer_image: web3-bayc.jpeg
         answer: |
@@ -432,7 +469,7 @@ rounds:
       - question: |
           Apple's recent October 30th keynote was the usual slickly produced sales event
 
-          Apart from all the product announcements there was something different about how this event was made.
+          There was something different about how this event was produced.
 
           What was different?
         answer: |
@@ -447,3 +484,34 @@ rounds:
         answer_image: iss-lost-toolbag.jpeg
         sources:
           - https://www.theguardian.com/science/2023/nov/11/astronaut-toolbag-earth-spacewalk
+
+  - title: Tie-Breaker
+    questions:
+      - question: |
+          Voyager 2 is currently in interstellar space
+
+          To the closest whole AU, how far away is Voyager 2 from Earth?
+
+          1 AU is the distance from the Earth to the Sun
+
+          Write it down in secret so we can compare!
+        answer: |
+          # 134 AU
+
+          It is at a distance of 134 AU (20 billion km; 12 billion mi) from Earth as of November 2023.
+
+        question_image: Voyager_spacecraft_model.png
+        answer_image: Voyager2_1977-2019-overview.png
+
+      - question: |
+          Voyager 1 is the furthest man made object from Earth
+
+          To the closest whole AU, how far away is Voyager 1 from Earth?
+
+          Write it down in secret so we can compare!
+
+        answer: |
+          # 162 AU
+
+        question_image: Voyager_spacecraft_model.png
+        answer_image: pale-blue-dot.jpg
